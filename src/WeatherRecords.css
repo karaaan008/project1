@@ -1,0 +1,74 @@
+.table-wrapper {
+  overflow-x: auto;
+  margin-top: 20px;
+  border: 2px solid #007bff; /* Outer border */
+  border-radius: 8px;
+  padding: 8px;
+  background-color: #fff;
+}
+
+.weather-table {
+  width: 100%;
+  border-collapse: collapse; /* Use collapse for crisp borders */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.weather-table th,
+.weather-table td {
+  padding: 14px 18px;
+  border: 2px solid #007bff; /* Solid blue borders */
+  text-align: left;
+  vertical-align: middle;
+  background-color: #fff;
+}
+
+.weather-table th {
+  background-color: #e0f0ff;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.weather-table tbody tr:hover td {
+  background-color: #f1f9ff;
+}
+
+.table-input {
+  padding: 6px 8px;
+  width: 100%;
+  font-size: 0.95rem;
+  border: 2px solid #007bff;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.action-btn {
+  margin: 2px 4px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0, 123, 255, 0.3);
+}
+
+.action-btn.cancel {
+  background-color: gray;
+  box-shadow: none;
+}
+
+.action-btn.delete {
+  background-color: #dc3545;
+  box-shadow: none;
+}
+
+.action-btn.edit {
+  background-color: #17a2b8;
+  box-shadow: none;
+}
+
+.action-btn:hover {
+  opacity: 0.9;
+}

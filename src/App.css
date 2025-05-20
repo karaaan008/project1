@@ -1,0 +1,212 @@
+/* General */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: white;
+  min-height: 100vh;
+}
+
+/* Login Styles */
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.container {
+  max-width: 400px;
+  width: 100%;
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: block;
+  margin: 0 auto 20px;
+  width: 80px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #e60000;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #e60000;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #e60000;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #cc0000;
+}
+
+.error {
+  color: #b30000;
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+/* Dashboard Styles */
+.dashboard-container {
+  background: linear-gradient(to bottom, #89f7fe, #66a6ff);
+  min-height: 100vh;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dashboard-inner {
+  max-width: 520px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 40px;
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.dashboard-heading {
+  font-size: 32px;
+  font-weight: 700;
+  color: #e60000;
+  margin-bottom: 24px;
+}
+
+.mode-toggle {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto 24px;
+}
+
+.mode-toggle label {
+  font-weight: 600;
+  color: #333;
+}
+
+.mode-toggle input[type="radio"] {
+  margin-right: 8px;
+  accent-color: #e60000;
+}
+
+.styled-input {
+  width: 100%;
+  max-width: 480px;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 2px solid #e60000;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.styled-input:focus {
+  border-color: #cc0000;
+  box-shadow: 0 0 5px rgba(230, 0, 0, 0.3);
+}
+
+.styled-button {
+  background-color: #e60000;
+  color: white;
+  padding: 14px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  max-width: 480px;
+}
+
+.styled-button:hover {
+  background-color: #b30000;
+}
+
+.weather-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.4));
+  backdrop-filter: blur(12px);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+  min-height: 180px;
+  height: 250px;
+  width: 330px; /* Set a fixed width */
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+
+.weather-icon img {
+  width: 100px;
+  height: 100px;
+  animation: float 3s ease-in-out infinite;
+}
+
+.temp {
+  font-size: 30px;
+  font-weight: bold;
+  color: #e60000;
+}
+
+.description {
+  text-transform: capitalize;
+  color: #555;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
